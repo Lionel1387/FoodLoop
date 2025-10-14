@@ -40,7 +40,7 @@ const restaurants = [
         </motion.div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           <Card className="p-6 text-center bg-gradient-to-br from-[#FFF3E0] to-[#FFE0B2] border-2 border-[#FDB940]">
             <div className="text-4xl text-[#1a1a1a] mb-2">{restaurants.length}</div>
             <p className="text-gray-600">Restaurantes activos</p>
@@ -50,12 +50,6 @@ const restaurants = [
               {restaurants.reduce((sum, r) => sum + r.dishes, 0)}
             </div>
             <p className="text-gray-600">Platos donados en total</p>
-          </Card>
-          <Card className="p-6 text-center bg-gradient-to-br from-[#FFF3E0] to-[#FFE0B2] border-2 border-[#FDB940]">
-            <div className="text-4xl text-[#1a1a1a] mb-2">
-              {restaurants.filter(r => r.verified).length}
-            </div>
-            <p className="text-gray-600">Restaurantes verificados</p>
           </Card>
         </div>
 

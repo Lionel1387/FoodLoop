@@ -162,7 +162,7 @@ export function About() {
               toneladas de comida cada día.
             </p>
             <p className="text-gray-600">
-              Trabajamos en colaboración con restaurantes, centros comunitarios y organizaciones sociales para 
+              Trabajamos en colaboración con restaurantes para 
               garantizar que cada plato cuente y que cada persona tenga acceso a alimentación digna y nutritiva.
             </p>
           </motion.div>
