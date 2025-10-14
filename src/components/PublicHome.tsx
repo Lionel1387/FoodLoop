@@ -20,14 +20,14 @@ export function PublicHome({ onNavigate }: PublicHomeProps) {
   const steps = [
     {
       number: '1',
-      title: 'Restaurante publica',
-      description: 'Los restaurantes publican comida sobrante de calidad en tiempo real.',
+      title: 'Comercio publica',
+      description: 'Los comercios publican comida sobrante de calidad en tiempo real.',
       icon: Store,
     },
     {
       number: '2',
-      title: 'CPC coordina',
-      description: 'Centros de Participación Comunitaria coordinan la recolección.',
+      title: 'Ente coordina',
+      description: 'CPC,Iglesia u otro ente informa sobre el exedente de comida.',
       icon: Users,
     },
     {
@@ -236,7 +236,7 @@ export function PublicHome({ onNavigate }: PublicHomeProps) {
               Reducimos el desperdicio, alimentamos la esperanza
             </h1>
             <p className="text-white/90 mb-10 max-w-3xl mx-auto text-lg md:text-xl">
-              Conectamos restaurantes con comida sobrante de calidad con personas que la necesitan. 
+              Conectamos comercios del sector alimenticio con comida sobrante de calidad con personas que la necesitan. 
               Juntos construimos una comunidad más solidaria y sostenible.
             </p>
             <Button 
@@ -244,7 +244,7 @@ export function PublicHome({ onNavigate }: PublicHomeProps) {
               size="lg"
               className="bg-[#FDB940] hover:bg-[#FCA311] text-[#1a1a1a] px-8 py-6 text-lg"
             >
-              Sumar mi restaurante
+              Sumar mi comercio
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </motion.div>
@@ -331,7 +331,7 @@ export function PublicHome({ onNavigate }: PublicHomeProps) {
             </div>
             <h2 className="text-[#1a1a1a] mb-4">Comidas disponibles ahora</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Alimentos frescos y de calidad listos para retirar. Si eres parte de un CPC o comedor comunitario, contacta directamente con los restaurantes.
+              Alimentos frescos y de calidad listos para retirar. Si eres parte de un CPC o comedor comunitario, contacta directamente con los comercios.
             </p>
           </div>
 
@@ -405,12 +405,6 @@ export function PublicHome({ onNavigate }: PublicHomeProps) {
               </div>
             </Carousel>
           </div>
-
-          <div className="text-center mt-8">
-            <p className="text-sm text-gray-500">
-              ¿Representas a un CPC o comedor comunitario? Contacta directamente con los restaurantes para coordinar el retiro.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -418,9 +412,9 @@ export function PublicHome({ onNavigate }: PublicHomeProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-[#1a1a1a] mb-4">Top Restaurantes del Mes</h2>
+            <h2 className="text-[#1a1a1a] mb-4">Top Comercios del Mes</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Los restaurantes que más han contribuido a nuestra comunidad este mes
+              Los comercios que más han contribuido a nuestra comunidad este mes
             </p>
           </div>
 
@@ -465,14 +459,14 @@ export function PublicHome({ onNavigate }: PublicHomeProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[#1a1a1a] mb-6">¿Listo para hacer la diferencia?</h2>
           <p className="text-[#1a1a1a]/80 mb-8 text-lg">
-            Únete a nuestra red de restaurantes comprometidos con la comunidad
+            Únete a nuestra red de comercios comprometidos con la comunidad
           </p>
           <Button 
             onClick={() => onNavigate('register')}
             size="lg"
             className="bg-[#1a1a1a] text-white hover:bg-[#2a2a2a]"
           >
-            Registrar mi restaurante ahora
+            Registrar mi comercio ahora
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>

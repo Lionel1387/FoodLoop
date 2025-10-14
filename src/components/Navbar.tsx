@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-import logoImage from 'figma:asset/a3eb284799e4c260a17df5164bed7f43f456c173.png';
+import logoImage from '../public/logoFoodLoop.png';
 
 interface NavbarProps {
   currentPage: string;
@@ -17,7 +17,7 @@ export function Navbar({ currentPage, onNavigate, isAuthenticated, onLogout }: N
     { name: 'Home', page: 'home' },
     { name: 'Cómo funciona', page: 'how-it-works' },
     { name: 'Nosotros', page: 'about' },
-    { name: 'Restaurantes', page: 'restaurants' },
+    { name: 'Comercios', page: 'restaurants' },
   ];
 
   return (
@@ -29,8 +29,19 @@ export function Navbar({ currentPage, onNavigate, isAuthenticated, onLogout }: N
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => onNavigate('home')}
           >
-            <img src={logoImage} alt="Foodloop" className="h-10 w-auto object-contain" />
+            <img
+                src={logoImage}
+                alt="Foodloop"
+                className="object-contain"
+                style={{
+                  width: "190px",
+                  height: "190px",
+                  maxHeight: "100%",
+                }}
+              />
+              
           </div>
+          
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -50,7 +61,7 @@ export function Navbar({ currentPage, onNavigate, isAuthenticated, onLogout }: N
             
             {isAuthenticated ? (
               <div className="flex items-center gap-4">
-                <span className="text-gray-600">Panel Restaurante</span>
+                <span className="text-gray-600">Panel Comercio</span>
                 <Button onClick={onLogout} variant="outline">
                   Cerrar sesión
                 </Button>
@@ -61,7 +72,7 @@ export function Navbar({ currentPage, onNavigate, isAuthenticated, onLogout }: N
                   Iniciar sesión
                 </Button>
                 <Button onClick={() => onNavigate('register')} className="bg-[#FDB940] hover:bg-[#FCA311] text-[#1a1a1a]">
-                  Registrar restaurante
+                  Registrar comercio
                 </Button>
               </div>
             )}
@@ -104,7 +115,7 @@ export function Navbar({ currentPage, onNavigate, isAuthenticated, onLogout }: N
             
             {isAuthenticated ? (
               <>
-                <div className="py-2 text-gray-600">Panel Restaurante</div>
+                <div className="py-2 text-gray-600">Panel Comercio</div>
                 <Button onClick={onLogout} variant="outline" className="w-full">
                   Cerrar sesión
                 </Button>

@@ -6,8 +6,8 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 export function HowItWorks() {
   const steps = [
     {
-      title: 'Registro del restaurante',
-      description: 'Los restaurantes se registran en la plataforma proporcionando su información básica y horarios de operación.',
+      title: 'Registro del comercio',
+      description: 'Los comercios se registran en la plataforma proporcionando su información básica y horarios de operación.',
       icon: '1',
     },
     {
@@ -16,13 +16,13 @@ export function HowItWorks() {
       icon: '2',
     },
     {
-      title: 'Coordinación CPC',
-      description: 'Los Centros de Participación Comunitaria visualizan todas las publicaciones y coordinan la logística de recolección.',
+      title: 'Coordinación ente',
+      description: 'El ente encargado informa sobre los exedentes de comida a las personas que lo necesiten',
       icon: '3',
     },
     {
       title: 'Distribución solidaria',
-      description: 'Las familias y comedores comunitarios reciben alimentos frescos y nutritivos, reduciendo el desperdicio.',
+      description: 'Las familias reciben alimentos frescos y nutritivos, reduciendo el desperdicio.',
       icon: '4',
     },
   ];
@@ -38,7 +38,7 @@ export function HowItWorks() {
         >
           <h1 className="text-[#1a1a1a] mb-4">¿Cómo funciona Foodloop?</h1>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Un sistema eficiente que conecta la generosidad de los restaurantes con las necesidades de la comunidad
+            Un sistema eficiente que conecta la generosidad de los comercios con las necesidades de la comunidad
           </p>
         </motion.div>
 
@@ -76,7 +76,7 @@ export function HowItWorks() {
                     <span className="text-[#1a1a1a] text-sm">✓</span>
                   </div>
                   <div>
-                    <p className="text-gray-900">Para restaurantes</p>
+                    <p className="text-gray-900">Para comercios</p>
                     <p className="text-gray-600 text-sm">Reducen desperdicio, mejoran su imagen social y contribuyen a la comunidad</p>
                   </div>
                 </li>
@@ -162,7 +162,7 @@ export function About() {
               toneladas de comida cada día.
             </p>
             <p className="text-gray-600">
-              Trabajamos en colaboración con restaurantes para 
+              Trabajamos en colaboración con comercios del sector alimenticio para 
               garantizar que cada plato cuente y que cada persona tenga acceso a alimentación digna y nutritiva.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export function About() {
           <Target className="w-16 h-16 text-[#FDB940] mx-auto mb-6" />
           <h2 className="text-[#1a1a1a] mb-4">Nuestro objetivo</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Aspiramos a expandir Foodloop a toda Córdoba, conectando miles de restaurantes 
+            Aspiramos a expandir Foodloop a toda Córdoba, conectando miles de comercios 
             con comunidades necesitadas y construyendo un futuro donde el desperdicio alimentario sea 
             cosa del pasado.
           </p>

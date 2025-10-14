@@ -7,7 +7,7 @@ export function AllRestaurants() {
 const restaurants = [
   { name: 'Pizzería Napolitana', zone: 'Nueva Córdoba', dishes: 243, description: 'Auténtica pizza italiana con masa madre', verified: true },
   { name: 'La Cocina de la Abuela', zone: 'Alberdi', dishes: 203, description: 'Comida casera tradicional', verified: true },
-  { name: 'Café & Bistró', zone: 'Cerro de las Rosas', dishes: 189, description: 'Café de especialidad y brunch', verified: true },
+  { name: 'Panaderia Julieta', zone: 'Cerro de las Rosas', dishes: 189, description: 'Panificaciones de todo tipo', verified: true },
   { name: 'Mar y Tierra', zone: 'Costanera', dishes: 178, description: 'Mariscos y carnes premium', verified: true },
   { name: 'Veggie Garden', zone: 'General Paz', dishes: 167, description: 'Cocina vegana y vegetariana', verified: true },
   { name: 'La Parrilla del Centro', zone: 'Centro', dishes: 156, description: 'Especialistas en carnes y parrilla argentina', verified: true },
@@ -16,7 +16,7 @@ const restaurants = [
   { name: 'Sushi House', zone: 'Villa Belgrano', dishes: 134, description: 'Sushi fresco y rolls creativos', verified: true },
   { name: 'El Parador', zone: 'Güemes', dishes: 134, description: 'Parrilla y vinos de autor', verified: false },
   { name: 'Sabores del Norte', zone: 'Alta Córdoba', dishes: 112, description: 'Cocina regional del noroeste argentino', verified: true },
-  { name: 'El Buen Sabor', zone: 'San Vicente', dishes: 98, description: 'Cocina casera y tradicional argentina', verified: true },
+  { name: 'Verduleria Pepito', zone: 'San Vicente', dishes: 98, description: 'Frutas y verduras Tradicionales', verified: true },
 ];
 
   return (
@@ -32,7 +32,7 @@ const restaurants = [
           <div className="w-20 h-20 bg-[#FDB940] rounded-full flex items-center justify-center mx-auto mb-6">
             <Store className="w-10 h-10 text-[#1a1a1a]" />
           </div>
-          <h1 className="text-[#1a1a1a] mb-4">Nuestros Restaurantes Aliados</h1>
+          <h1 className="text-[#1a1a1a] mb-4">Nuestros Comercios Aliados</h1>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
             Conoce a los establecimientos gastronómicos que forman parte de nuestra red solidaria. 
             Cada uno aporta su granito de arena para construir una comunidad más justa.
@@ -43,7 +43,7 @@ const restaurants = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           <Card className="p-6 text-center bg-gradient-to-br from-[#FFF3E0] to-[#FFE0B2] border-2 border-[#FDB940]">
             <div className="text-4xl text-[#1a1a1a] mb-2">{restaurants.length}</div>
-            <p className="text-gray-600">Restaurantes activos</p>
+            <p className="text-gray-600">Comercios Activos</p>
           </Card>
           <Card className="p-6 text-center bg-gradient-to-br from-[#FFF3E0] to-[#FFE0B2] border-2 border-[#FDB940]">
             <div className="text-4xl text-[#1a1a1a] mb-2">
@@ -108,14 +108,14 @@ const restaurants = [
         >
           <h2 className="text-[#1a1a1a] mb-4">¿Querés ser parte de la red?</h2>
           <p className="text-[#1a1a1a]/80 mb-8 max-w-2xl mx-auto text-lg">
-            Sumate a nuestra comunidad de restaurantes comprometidos con la solidaridad y la sostenibilidad
+            Sumate a nuestra comunidad de Comercios del sector alimenticio comprometidos con la solidaridad y la sostenibilidad
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#register"
               className="inline-flex items-center justify-center px-8 py-3 bg-[#1a1a1a] text-white rounded-lg hover:bg-[#2a2a2a] transition-colors"
             >
-              Registrar mi restaurante
+              Registrar mi comercio
             </a>
             <a
               href="#contact"

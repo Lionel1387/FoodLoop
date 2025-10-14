@@ -12,7 +12,7 @@ export function Footer() {
               <img src={logoImage} alt="Foodloop" className="h-10 w-auto object-contain" />
             </div>
             <p className="text-gray-300 max-w-md">
-              Conectamos restaurantes con comida sobrante con personas que la necesitan. 
+              Conectamos comercios del sector alimenticio con comida sobrante con personas que la necesitan. 
               Juntos reducimos el desperdicio y alimentamos la esperanza.
             </p>
           </div>

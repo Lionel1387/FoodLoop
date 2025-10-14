@@ -39,7 +39,7 @@ export function Login({ onLogin }: LoginProps) {
       >
         <div className="text-center mb-8">
           <img src={logoImage} alt="Foodloop" className="h-16 w-auto object-contain mx-auto mb-4" />
-          <h1 className="text-[#1a1a1a] mb-2">Panel de Restaurante</h1>
+          <h1 className="text-[#1a1a1a] mb-2">Panel de Comercio</h1>
           <p className="text-gray-600">Inicia sesión para gestionar tus publicaciones</p>
         </div>
 
@@ -82,7 +82,7 @@ export function Login({ onLogin }: LoginProps) {
             <p className="text-sm text-gray-500 text-center">
               ¿No tienes cuenta?{' '}
               <a href="#" className="text-[#FDB940] hover:underline">
-                Registra tu restaurante
+                Registra tu Comercio
               </a>
             </p>
           </form>
