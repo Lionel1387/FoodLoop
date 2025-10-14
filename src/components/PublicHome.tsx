@@ -39,104 +39,176 @@ export function PublicHome({ onNavigate }: PublicHomeProps) {
   ];
 
   const restaurants = [
-    { name: 'La Parrilla del Centro', zone: 'Palermo', dishes: 156, description: 'Especialistas en carnes y parrilla argentina' },
-    { name: 'Pizzería Napolitana', zone: 'Recoleta', dishes: 243, description: 'Auténtica pizza italiana con masa madre' },
-    { name: 'El Buen Sabor', zone: 'San Telmo', dishes: 98, description: 'Cocina casera y tradicional argentina' },
-    { name: 'Café & Bistró', zone: 'Belgrano', dishes: 189, description: 'Café de especialidad y brunch' },
-    { name: 'Sushi House', zone: 'Puerto Madero', dishes: 134, description: 'Sushi fresco y rolls creativos' },
-    { name: 'Veggie Garden', zone: 'Villa Crespo', dishes: 167, description: 'Cocina vegana y vegetariana' },
-    { name: 'Pasta & Co', zone: 'Palermo', dishes: 145, description: 'Pasta fresca casera italiana' },
-    { name: 'Sabores del Norte', zone: 'San Telmo', dishes: 112, description: 'Cocina regional del noroeste argentino' },
-    { name: 'Mar y Tierra', zone: 'Puerto Madero', dishes: 178, description: 'Mariscos y carnes premium' },
-    { name: 'La Cocina de la Abuela', zone: 'Caballito', dishes: 203, description: 'Comida casera tradicional' },
-    { name: 'Delicias Asiáticas', zone: 'Belgrano', dishes: 156, description: 'Fusión de cocina asiática' },
-    { name: 'El Parador', zone: 'Palermo', dishes: 134, description: 'Parrilla y vinos de autor' },
-  ];
+  { 
+    name: 'La Parrilla del Centro', 
+    zone: 'Centro', 
+    dishes: 156, 
+    description: 'Especialistas en carnes y parrilla argentina', 
+    address: 'Av. Colón 1234' 
+  },
+  { 
+    name: 'Pizzería Napolitana', 
+    zone: 'Nueva Córdoba', 
+    dishes: 243, 
+    description: 'Auténtica pizza italiana con masa madre', 
+    address: 'Av. Hipólito Yrigoyen 567' 
+  },
+  { 
+    name: 'El Buen Sabor', 
+    zone: 'San Vicente', 
+    dishes: 98, 
+    description: 'Cocina casera y tradicional argentina', 
+    address: 'Av. San Jerónimo 987' 
+  },
+  { 
+    name: 'Café & Bistró', 
+    zone: 'Cerro de las Rosas', 
+    dishes: 189, 
+    description: 'Café de especialidad y brunch', 
+    address: 'Av. Rafael Núñez 3456' 
+  },
+  { 
+    name: 'Sushi House', 
+    zone: 'Villa Belgrano', 
+    dishes: 134, 
+    description: 'Sushi fresco y rolls creativos', 
+    address: 'Av. Gauss 890' 
+  },
+  { 
+    name: 'Veggie Garden', 
+    zone: 'General Paz', 
+    dishes: 167, 
+    description: 'Cocina vegana y vegetariana', 
+    address: '25 de Mayo 543' 
+  },
+  { 
+    name: 'Pasta & Co', 
+    zone: 'Güemes', 
+    dishes: 145, 
+    description: 'Pasta fresca casera italiana', 
+    address: 'Belgrano 456' 
+  },
+  { 
+    name: 'Sabores del Norte', 
+    zone: 'Alta Córdoba', 
+    dishes: 112, 
+    description: 'Cocina regional del noroeste argentino', 
+    address: 'Juan B. Justo 876' 
+  },
+  { 
+    name: 'Mar y Tierra', 
+    zone: 'Costanera', 
+    dishes: 178, 
+    description: 'Mariscos y carnes premium', 
+    address: 'Av. del Trabajo 1023' 
+  },
+  { 
+    name: 'La Cocina de la Abuela', 
+    zone: 'Alberdi', 
+    dishes: 203, 
+    description: 'Comida casera tradicional', 
+    address: 'Av. Duarte Quirós 2145' 
+  },
+  { 
+    name: 'Delicias Asiáticas', 
+    zone: 'Güemes', 
+    dishes: 156, 
+    description: 'Fusión de cocina asiática', 
+    address: 'Achával Rodríguez 321' 
+  },
+  { 
+    name: 'El Parador', 
+    zone: 'Güemes', 
+    dishes: 134, 
+    description: 'Parrilla y vinos de autor', 
+    address: 'Belgrano 499' 
+  },
+];
 
   const topRestaurants = [...restaurants].sort((a, b) => b.dishes - a.dishes).slice(0, 3);
 
   const availableFoods = [
-    {
-      id: 1,
-      restaurant: 'La Parrilla del Centro',
-      zone: 'Palermo',
-      name: 'Milanesas con puré',
-      portions: 15,
-      type: 'Carne',
-      deadline: '2025-10-13 22:00',
-      address: 'Av. Corrientes 1234',
-    },
-    {
-      id: 2,
-      restaurant: 'Pizzería Napolitana',
-      zone: 'Recoleta',
-      name: 'Pizza Margherita',
-      portions: 8,
-      type: 'Pizza',
-      deadline: '2025-10-13 21:00',
-      address: 'Av. Santa Fe 5678',
-    },
-    {
-      id: 3,
-      restaurant: 'El Buen Sabor',
-      zone: 'San Telmo',
-      name: 'Ensaladas variadas',
-      portions: 12,
-      type: 'Vegetariano',
-      deadline: '2025-10-13 20:00',
-      address: 'Defensa 987',
-    },
-    {
-      id: 4,
-      restaurant: 'Café & Bistró',
-      zone: 'Belgrano',
-      name: 'Sándwiches y wraps',
-      portions: 20,
-      type: 'Snacks',
-      deadline: '2025-10-14 11:00',
-      address: 'Cabildo 3456',
-    },
-    {
-      id: 5,
-      restaurant: 'Sushi House',
-      zone: 'Puerto Madero',
-      name: 'Rolls y sashimi',
-      portions: 10,
-      type: 'Pescado',
-      deadline: '2025-10-13 22:30',
-      address: 'Av. Alicia Moreau de Justo 890',
-    },
-    {
-      id: 6,
-      restaurant: 'Veggie Garden',
-      zone: 'Villa Crespo',
-      name: 'Bowl vegano de quinoa',
-      portions: 18,
-      type: 'Vegetariano',
-      deadline: '2025-10-14 13:00',
-      address: 'Av. Corrientes 5432',
-    },
-    {
-      id: 7,
-      restaurant: 'Pasta & Co',
-      zone: 'Palermo',
-      name: 'Ravioles caseros',
-      portions: 14,
-      type: 'Pasta',
-      deadline: '2025-10-13 21:30',
-      address: 'Costa Rica 4567',
-    },
-    {
-      id: 8,
-      restaurant: 'Sabores del Norte',
-      zone: 'San Telmo',
-      name: 'Empanadas salteñas',
-      portions: 25,
-      type: 'Snacks',
-      deadline: '2025-10-14 10:00',
-      address: 'Balcarce 876',
-    },
-  ];
+  {
+    id: 1,
+    restaurant: 'La Parrilla del Centro',
+    zone: 'Centro',
+    name: 'Milanesas con puré',
+    portions: 15,
+    type: 'Carne',
+    deadline: '2025-10-13 22:00',
+    address: 'Av. Colón 1234',
+  },
+  {
+    id: 2,
+    restaurant: 'Pizzería Napolitana',
+    zone: 'Nueva Córdoba',
+    name: 'Pizza Margherita',
+    portions: 8,
+    type: 'Pizza',
+    deadline: '2025-10-13 21:00',
+    address: 'Av. Hipólito Yrigoyen 567',
+  },
+  {
+    id: 3,
+    restaurant: 'El Buen Sabor',
+    zone: 'San Vicente',
+    name: 'Ensaladas variadas',
+    portions: 12,
+    type: 'Vegetariano',
+    deadline: '2025-10-13 20:00',
+    address: 'Av. San Jerónimo 987',
+  },
+  {
+    id: 4,
+    restaurant: 'Café & Bistró',
+    zone: 'Cerro de las Rosas',
+    name: 'Sándwiches y wraps',
+    portions: 20,
+    type: 'Snacks',
+    deadline: '2025-10-14 11:00',
+    address: 'Av. Rafael Núñez 3456',
+  },
+  {
+    id: 5,
+    restaurant: 'Sushi House',
+    zone: 'Villa Belgrano',
+    name: 'Rolls y sashimi',
+    portions: 10,
+    type: 'Pescado',
+    deadline: '2025-10-13 22:30',
+    address: 'Av. Gauss 890',
+  },
+  {
+    id: 6,
+    restaurant: 'Veggie Garden',
+    zone: 'General Paz',
+    name: 'Bowl vegano de quinoa',
+    portions: 18,
+    type: 'Vegetariano',
+    deadline: '2025-10-14 13:00',
+    address: '25 de Mayo 543',
+  },
+  {
+    id: 7,
+    restaurant: 'Pasta & Co',
+    zone: 'Güemes',
+    name: 'Ravioles caseros',
+    portions: 14,
+    type: 'Pasta',
+    deadline: '2025-10-13 21:30',
+    address: 'Belgrano 456',
+  },
+  {
+    id: 8,
+    restaurant: 'Sabores del Norte',
+    zone: 'Alta Córdoba',
+    name: 'Empanadas salteñas',
+    portions: 25,
+    type: 'Snacks',
+    deadline: '2025-10-14 10:00',
+    address: 'Juan B. Justo 876',
+  },
+];
 
   return (
     <div className="min-h-screen bg-white">

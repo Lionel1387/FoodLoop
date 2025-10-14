@@ -4,20 +4,20 @@ import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 
 export function AllRestaurants() {
-  const restaurants = [
-    { name: 'Pizzería Napolitana', zone: 'Recoleta', dishes: 243, description: 'Auténtica pizza italiana con masa madre', verified: true },
-    { name: 'La Cocina de la Abuela', zone: 'Caballito', dishes: 203, description: 'Comida casera tradicional', verified: true },
-    { name: 'Café & Bistró', zone: 'Belgrano', dishes: 189, description: 'Café de especialidad y brunch', verified: true },
-    { name: 'Mar y Tierra', zone: 'Puerto Madero', dishes: 178, description: 'Mariscos y carnes premium', verified: true },
-    { name: 'Veggie Garden', zone: 'Villa Crespo', dishes: 167, description: 'Cocina vegana y vegetariana', verified: true },
-    { name: 'La Parrilla del Centro', zone: 'Palermo', dishes: 156, description: 'Especialistas en carnes y parrilla argentina', verified: true },
-    { name: 'Delicias Asiáticas', zone: 'Belgrano', dishes: 156, description: 'Fusión de cocina asiática', verified: false },
-    { name: 'Pasta & Co', zone: 'Palermo', dishes: 145, description: 'Pasta fresca casera italiana', verified: true },
-    { name: 'Sushi House', zone: 'Puerto Madero', dishes: 134, description: 'Sushi fresco y rolls creativos', verified: true },
-    { name: 'El Parador', zone: 'Palermo', dishes: 134, description: 'Parrilla y vinos de autor', verified: false },
-    { name: 'Sabores del Norte', zone: 'San Telmo', dishes: 112, description: 'Cocina regional del noroeste argentino', verified: true },
-    { name: 'El Buen Sabor', zone: 'San Telmo', dishes: 98, description: 'Cocina casera y tradicional argentina', verified: true },
-  ];
+const restaurants = [
+  { name: 'Pizzería Napolitana', zone: 'Nueva Córdoba', dishes: 243, description: 'Auténtica pizza italiana con masa madre', verified: true },
+  { name: 'La Cocina de la Abuela', zone: 'Alberdi', dishes: 203, description: 'Comida casera tradicional', verified: true },
+  { name: 'Café & Bistró', zone: 'Cerro de las Rosas', dishes: 189, description: 'Café de especialidad y brunch', verified: true },
+  { name: 'Mar y Tierra', zone: 'Costanera', dishes: 178, description: 'Mariscos y carnes premium', verified: true },
+  { name: 'Veggie Garden', zone: 'General Paz', dishes: 167, description: 'Cocina vegana y vegetariana', verified: true },
+  { name: 'La Parrilla del Centro', zone: 'Centro', dishes: 156, description: 'Especialistas en carnes y parrilla argentina', verified: true },
+  { name: 'Delicias Asiáticas', zone: 'Güemes', dishes: 156, description: 'Fusión de cocina asiática', verified: false },
+  { name: 'Pasta & Co', zone: 'Nueva Córdoba', dishes: 145, description: 'Pasta fresca casera italiana', verified: true },
+  { name: 'Sushi House', zone: 'Villa Belgrano', dishes: 134, description: 'Sushi fresco y rolls creativos', verified: true },
+  { name: 'El Parador', zone: 'Güemes', dishes: 134, description: 'Parrilla y vinos de autor', verified: false },
+  { name: 'Sabores del Norte', zone: 'Alta Córdoba', dishes: 112, description: 'Cocina regional del noroeste argentino', verified: true },
+  { name: 'El Buen Sabor', zone: 'San Vicente', dishes: 98, description: 'Cocina casera y tradicional argentina', verified: true },
+];
 
   return (
     <div className="min-h-screen bg-white py-16">

@@ -101,7 +101,7 @@ export function RestaurantRegister({ onNavigate }: RestaurantRegisterProps) {
                   required
                   value={formData.address}
                   onChange={handleChange}
-                  placeholder="Ej: Av. Corrientes 1234, CABA"
+                  placeholder="Ej:Corrientes 1234"
                 />
               </div>
 

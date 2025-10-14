@@ -208,7 +208,7 @@ export function About() {
           <Target className="w-16 h-16 text-[#FDB940] mx-auto mb-6" />
           <h2 className="text-[#1a1a1a] mb-4">Nuestro objetivo</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Aspiramos a expandir Foodloop a todas las ciudades del país, conectando miles de restaurantes 
+            Aspiramos a expandir Foodloop a toda Córdoba, conectando miles de restaurantes 
             con comunidades necesitadas y construyendo un futuro donde el desperdicio alimentario sea 
             cosa del pasado.
           </p>
