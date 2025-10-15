@@ -248,7 +248,7 @@ export function RestaurantDashboard({ onLogout }: RestaurantDashboardProps) {
             </motion.div>
           )}
 
-          {/* Mis publicaciones */}
+          {/* Mis publicaciones (Responsive) */}
           {activeSection === 'posts' && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -256,8 +256,9 @@ export function RestaurantDashboard({ onLogout }: RestaurantDashboardProps) {
               transition={{ duration: 0.3 }}
             >
               <h1 className="text-gray-900 mb-6">Mis publicaciones</h1>
-              <Card>
-                <div className="overflow-x-auto">
+              <Card className="p-4">
+                {/* Vista de tabla (desktop) */}
+                <div className="hidden md:block overflow-x-auto">
                   <Table>
                     <TableHeader>
                       <TableRow>
@@ -306,6 +307,52 @@ export function RestaurantDashboard({ onLogout }: RestaurantDashboardProps) {
                       ))}
                     </TableBody>
                   </Table>
+                </div>
+
+                {/* Vista móvil tipo tarjetas */}
+                <div className="md:hidden space-y-4">
+                  {foods.map((food) => (
+                    <div
+                      key={food.id}
+                      className="p-4 border rounded-lg bg-white shadow-sm flex flex-col gap-2"
+                    >
+                      <div className="flex justify-between items-center">
+                        <h3 className="font-semibold text-gray-900">{food.name}</h3>
+                        <Badge
+                          variant={food.status === 'delivered' ? 'secondary' : 'default'}
+                          className={
+                            food.status === 'delivered'
+                              ? 'bg-gray-200 text-gray-700'
+                              : 'bg-[#FFF3E0] text-[#FDB940]'
+                          }
+                        >
+                          {food.status === 'delivered' ? 'Entregado' : 'Disponible'}
+                        </Badge>
+                      </div>
+
+                      <p className="text-sm text-gray-600">
+                        <span className="font-medium">Cantidad:</span> {food.quantity} porciones
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        <span className="font-medium">Límite:</span>{' '}
+                        {new Date(food.deadline).toLocaleString('es-AR', {
+                          day: '2-digit',
+                          month: '2-digit',
+                          hour: '2-digit',
+                          minute: '2-digit',
+                        })}
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        <span className="font-medium">Publicado:</span>{' '}
+                        {new Date(food.publishedDate).toLocaleString('es-AR', {
+                          day: '2-digit',
+                          month: '2-digit',
+                          hour: '2-digit',
+                          minute: '2-digit',
+                        })}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </Card>
             </motion.div>
